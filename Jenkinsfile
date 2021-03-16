@@ -1,8 +1,9 @@
 pipeline{
 	agent any
-		triggers{
+		triggers {
 			cron('H/15 * * * *')
-		}		stages{
+		}
+		stages{
 			stage('echo'){
 				steps{
 					echo 'from the trigger again for the final time'
